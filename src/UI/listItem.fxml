@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ListCell?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <graphic>
+      <HBox spacing="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <VBox>
+               <children>
+                  <CheckBox fx:id="completedChb" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#checked" />
+               </children>
+               <padding>
+                  <Insets top="3.0" />
+               </padding>
+            </VBox>
+            <VBox>
+               <children>
+                  <Text fx:id="taskNameTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="Calibri" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="dateTimetxt" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="System Italic" size="10.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <Region prefHeight="34.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <VBox alignment="CENTER">
+               <children>
+                  <Text fx:id="statusTxt" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </graphic>
+</fx:root>

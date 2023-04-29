@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="261.0" prefWidth="215.0" style="-fx-border-width: 5; -fx-border-color: #0066CC; -fx-background-color: #0066CC;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.UpdateTaskCont">
+   <center>
+      <HBox alignment="CENTER" prefHeight="261.0" prefWidth="219.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <TextField fx:id="taskNameTxtF" alignment="CENTER" promptText="Task Name">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="datePicker" prefHeight="25.0" prefWidth="194.0" promptText="Select Date">
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </DatePicker>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Label text="Hour" textFill="#fffbfb" />
+                        <ChoiceBox fx:id="hourChb" prefHeight="25.0" prefWidth="45.0" />
+                        <Region prefHeight="25.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+                        <ChoiceBox fx:id="minuteChb" prefHeight="25.0" prefWidth="45.0" />
+                        <Label layoutX="10.0" layoutY="10.0" text="Minute" textFill="WHITE" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER">
+                     <children>
+                        <Button fx:id="updateBtn" mnemonicParsing="false" onAction="#update" style="-fx-background-color: #000000;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                        <Region prefHeight="25.0" prefWidth="64.0" />
+                        <Button fx:id="deleteBtn" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #000000;" text="Delete" textFill="#fffdfd">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="70.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>
