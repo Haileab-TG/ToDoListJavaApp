@@ -48,6 +48,7 @@ This is a simple To Do List Desktop App built using JavaFX and MongoDB database.
 
 ## Built With
 
+- Java
 - JavaFX - GUI Framework
 - MongoDB - NoSQL Database
 - Scene Builder - JavaFx GUI fxml file generator
